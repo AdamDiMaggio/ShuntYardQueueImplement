@@ -28,20 +28,12 @@ void Queue::enqueue(string payload)
 
 string Queue::dequeue()
 {
-    if(this->head)
-    {
         Node* temp = this->head;
         this->head = this->head->getNextNode();
         string val2Return = temp->getPayload();
         delete temp;
         this->count--;
         return val2Return;
-    }
-    else
-    {
-        return ""; //this should never happen!!!!  Throw an exception
-    }
-    
 }
 
 int Queue::getCount()
