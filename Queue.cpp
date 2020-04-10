@@ -8,11 +8,6 @@ Queue::Queue()
     this->count = 0;
 }
 
-bool Queue::isEmpty()
-{
-    return this->count == 0;
-}
-
 //add to end of queue
 void Queue::enqueue(string payload)
 {
