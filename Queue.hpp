@@ -16,6 +16,5 @@ class Queue
         void display();
         int getCount();
         Node* getHead();
-        bool isEmpty();
 };
 #endif
